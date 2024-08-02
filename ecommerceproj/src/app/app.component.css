@@ -1,0 +1,24 @@
+.container-fluid{
+    margin-right: 50px;
+    
+}
+ .navbar-collapse{
+    margin-right: 50px;
+ }
+ .hr{
+    height: 100vh;
+ }
+
+
+ /* footer.component.css */
+.footer {
+
+   background-color: #7b3f00;
+   padding: 20px 0;
+   color: white;
+   margin-top: 50px;
+ 
+ }
+ .text-reset{
+   text-decoration: none;
+ }

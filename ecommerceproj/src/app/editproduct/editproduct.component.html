@@ -1,0 +1,28 @@
+<h2>Edit Product</h2>
+
+<div class="container d-flex justify-content-center align-items-center">
+
+  <form *ngIf="product" (ngSubmit)="updateProduct()">
+    <label>
+      <input id="name" [(ngModel)]="product.productName" name="name" required  class="form-control">
+      <span>name</span>
+    </label>
+    
+    <label>
+      <input id="price" type="number" [(ngModel)]="product.ProductPrice" name="price" required class="form-control">
+      <span>price</span>
+    </label>
+    <label>
+      <input id="qty" type="number" [(ngModel)]="product.productQuantity" name="qty" required  class="form-control">
+      <span>Quantity</span>
+    </label>
+    <label>
+      <input id="img" type="text" [(ngModel)]="product.productImage" name="img" required  class="form-control">
+      <span>image</span>
+    </label>
+   
+    <input type="submit" value="Add Product">
+  </form>
+</div>
+
+<a class="btn btn-warning" routerLink="/">Back to List</a>

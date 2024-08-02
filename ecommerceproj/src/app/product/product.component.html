@@ -1,0 +1,32 @@
+
+<div class="padded container d-flex flex-wrap justify-content-center">
+
+    <div class="card" *ngFor="let product of productData">
+        <div class="content-1">
+            <img class="card-img-top" src={{product.productImage}} alt="Card image">
+        </div>
+        <div class="content-2">
+            <div class="branding">
+                <span>{{product.productName}}</span>
+                <span>Quantity: {{product.productQuantity}}</span>
+                <h4>Price: {{product.ProductPrice}}</h4>
+            </div>
+            <div class="ratings">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+            </div>
+            <button  class="btn btn-primary" (click)="getProductById(product.productid)">Product Details</button>
+            <button class="btn btn-danger mx-3"  (click)="deleteProduct(product.productid)">Delete</button>
+            <button class="btn btn-warning" (click)="updateProduct(product.productid)">Update</button>
+        </div>
+    </div>
+          <div class="row col-4 float-right w-100 p-4">
+            
+            <div class="buttons-container">
+              <button class="button-arounder  mx-3" (click)="addProduct()"> Add Product</button>
+            </div>
+          </div>
+  

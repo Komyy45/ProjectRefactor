@@ -1,0 +1,19 @@
+<div class="container d-flex justify-content-center align-items-center">
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label>
+      <input type="text" class="form-control" id="username" formControlName="username" minlength="3" placeholder="Enter username">
+      <span>username</span>
+    </label>
+    
+    <label>
+      <input type="password" class="form-control" id="password" formControlName="password" required  placeholder="Password">
+      <span>password</span>
+    </label>
+   
+    <input type="submit" value="Login">
+  </form>
+
+</div>
+
+  
